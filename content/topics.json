@@ -1,0 +1,12 @@
+[
+  { "slug": "css-selectors-specificity", "title": "CSS 선택자와 우선순위 이해하기", "used": true },
+  { "slug": "flexbox-basics", "title": "Flexbox 레이아웃 기초", "used": false },
+  { "slug": "css-grid-basics", "title": "CSS Grid 레이아웃 기초", "used": false },
+  { "slug": "js-event-loop", "title": "JavaScript 이벤트 루프와 비동기 처리", "used": false },
+  { "slug": "web-storage", "title": "localStorage와 sessionStorage 차이", "used": false },
+  { "slug": "fetch-api-error-handling", "title": "Fetch API와 에러 처리", "used": false },
+  { "slug": "semantic-html-a11y", "title": "시맨틱 HTML과 웹 접근성", "used": false },
+  { "slug": "css-transitions-animations", "title": "CSS 트랜지션과 애니메이션", "used": false },
+  { "slug": "responsive-images", "title": "반응형 이미지 다루기 (srcset, picture)", "used": false },
+  { "slug": "critical-rendering-path", "title": "브라우저 렌더링 과정 이해하기", "used": false }
+]

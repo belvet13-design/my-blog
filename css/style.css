@@ -1,0 +1,223 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #2563eb;
+  --border: #e5e5e5;
+  --code-bg: #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121212;
+    --fg: #eaeaea;
+    --muted: #a0a0a0;
+    --accent: #6ea8fe;
+    --border: #2e2e2e;
+    --code-bg: #1e1e1e;
+  }
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --fg: #eaeaea;
+  --muted: #a0a0a0;
+  --accent: #6ea8fe;
+  --border: #2e2e2e;
+  --code-bg: #1e1e1e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  background: var(--accent);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+main#app {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-item:first-child {
+  padding-top: 0;
+}
+
+.post-link {
+  text-decoration: none;
+}
+
+.post-title {
+  margin: 0 0 0.25rem;
+  color: var(--fg);
+}
+
+.post-date {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.post-excerpt {
+  color: var(--muted);
+  margin: 0.5rem 0 0;
+}
+
+.post-tags {
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  margin-right: 0.4rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.post .post-title {
+  margin-bottom: 0.25rem;
+}
+
+.post .post-date {
+  margin-bottom: 1.5rem;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+  line-height: 1.3;
+  margin-top: 2rem;
+}
+
+.post-content p {
+  margin: 1rem 0;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.post-content pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.post-content code {
+  background: var(--code-bg);
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.post-content blockquote {
+  margin: 1rem 0;
+  padding: 0.25rem 1rem;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+}
+
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+.post-content ul,
+.post-content ol {
+  padding-left: 1.4rem;
+}
+
+.message,
+.empty {
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  main#app {
+    padding: 1.5rem 1rem;
+  }
+  .site-header {
+    padding: 1rem;
+  }
+  .post-content h1 {
+    font-size: 1.5rem;
+  }
+  .post-content h2 {
+    font-size: 1.3rem;
+  }
+  .post-content h3 {
+    font-size: 1.1rem;
+  }
+}

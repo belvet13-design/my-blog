@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "Hello, World",
+    "date": "2026-01-15",
+    "file": "hello-world.md",
+    "excerpt": "이 블로그를 시작하며 남기는 첫 글입니다.",
+    "tags": ["meta", "intro"]
+  },
+  {
+    "slug": "markdown-guide",
+    "title": "마크다운 문법 가이드",
+    "date": "2026-03-02",
+    "file": "markdown-guide.md",
+    "excerpt": "이 블로그가 지원하는 마크다운 문법을 한눈에 정리했습니다.",
+    "tags": ["markdown", "guide"]
+  },
+  {
+    "slug": "responsive-css-notes",
+    "title": "반응형 CSS 정리 노트",
+    "date": "2026-05-20",
+    "file": "responsive-css-notes.md"
+  },
+  {
+    "slug": "today-i-learned",
+    "title": "오늘 배운 것",
+    "date": "2026-07-08",
+    "file": "today-i-learned.md",
+    "excerpt": "클로드 코드로 블로그를 만들며 정리한 HTML, CSS, JavaScript의 역할.",
+    "tags": ["회고", "webdev"]
+  },
+  {
+    "slug": "css-selectors-specificity",
+    "title": "CSS 선택자와 우선순위 이해하기",
+    "date": "2026-07-08",
+    "file": "css-selectors-specificity.md",
+    "excerpt": "id, 클래스, 태그 선택자의 우선순위 점수가 어떻게 계산되는지 정리했습니다.",
+    "tags": ["css", "basics"]
+  },
+  {
+    "slug": "building-markdown-parser",
+    "title": "직접 만든 마크다운 파서 살펴보기",
+    "date": "2026-07-09",
+    "file": "building-markdown-parser.md",
+    "excerpt": "외부 라이브러리 없이 마크다운을 HTML로 바꾸는 파서를 어떻게 만들었는지 정리했습니다.",
+    "tags": ["javascript", "markdown", "parser"]
+  },
+  {
+    "slug": "hash-router-spa",
+    "title": "해시 라우터로 SPA 만들기",
+    "date": "2026-07-09",
+    "file": "hash-router-spa.md",
+    "excerpt": "프레임워크 없이 페이지 새로고침 없는 블로그를 만든 해시 라우팅 구조를 정리했습니다.",
+    "tags": ["javascript", "spa", "routing"]
+  }
+]
