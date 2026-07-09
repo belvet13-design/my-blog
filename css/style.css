@@ -269,6 +269,18 @@ a {
   color: #fff;
 }
 
+.pixel-preview {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  background: #2b2b2b;
+}
+
+.pixel-cell {
+  aspect-ratio: 1 / 1;
+  border-radius: 1px;
+  background: #3f3f3f;
+}
+
 .app-card-body {
   padding: 0.75rem 1rem 1rem;
 }
